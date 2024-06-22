@@ -9,11 +9,12 @@ import json
 from groq import Groq
 import os
 
-client = Groq(api_key="YOUR API KEY")
+client = Groq(api_key="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")
 
 # Define the models to use for each agent
-ORCHESTRATOR_MODEL = "mixtral-8x7b-32768"
-SUB_AGENT_MODEL = "mixtral-8x7b-32768"
+#"mixtral-8x7b-32768"
+ORCHESTRATOR_MODEL = "llama3-70b-8192"
+SUB_AGENT_MODEL = "llama3-70b-8192"
 REFINER_MODEL = "llama3-70b-8192"
 
 # Initialize the Rich Console
